@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+
+.LeftSide {
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3); 
+    height: 100vh;
+
+    &_top {
+        padding: 30px;
+        border-bottom: 1px solid $border_color;
+        background-color: $top_background;
+
+        &_title {
+            @include size-24;
+            color: $dark_green_color;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        &_job {
+            @include size-14;
+            color: $dark_golden_color;
+        }
+    }
+
+}

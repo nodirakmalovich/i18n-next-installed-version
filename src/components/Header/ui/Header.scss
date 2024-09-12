@@ -1,0 +1,13 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.HeaderComponent {
+    padding: 30px;
+    background-color: $light_green;
+
+    &_text {
+        @include header;
+        color: $white_color;
+        text-transform: uppercase;
+    }
+}

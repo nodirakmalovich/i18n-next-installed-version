@@ -1,0 +1,25 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.about_page {
+    &_wrapper {
+        padding: 30px;
+        margin-top: 27px;
+
+        &_title {
+            border-left: 5px solid $dark_brown;
+            padding-left: 22.5px;
+
+            &_text {
+                @include size-32;
+                color: $dark_brown;
+            }
+        }
+
+        &_description{
+            margin-top: 25px;
+            font-size: 25px;
+            line-height: 2.88rem;
+        }
+    }
+}

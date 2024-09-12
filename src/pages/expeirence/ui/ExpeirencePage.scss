@@ -1,0 +1,14 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+
+
+.ExpeirencePage{
+
+    &_wrapper{
+        @include flex-style;
+        justify-content: center;
+       padding: 30px;
+        
+    }
+}

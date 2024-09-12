@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.category_component {
+    @include flex-style;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+    &:hover {
+        border-left: 4px solid $dark_green_color;
+        background-color: $dark_golden_color;
+    }
+
+    &:active {
+        border-left: 4px solid $dark_green_color;
+        background-color: $dark_golden_color;
+    }
+
+    &:hover &_title {
+        font-weight: 400;
+        color: white;
+    }
+
+    &_image {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    &_title {
+        @include size-16;
+        text-transform: capitalize;
+        color: $black_color;
+
+    }
+}

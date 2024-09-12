@@ -1,0 +1,25 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.HomeHero {
+    padding: 45px;
+
+    &_wrapper {
+        margin: 26px 0;
+        padding: 0 30px;
+        &_header {
+            color: white;
+            font-weight: 300;
+            font-size: 62px;
+
+            &_teal {
+                background-color: $light_green;
+                padding: 0 10px;
+            }
+
+            &_underline {
+                border-bottom: 5px solid $light_green;
+            }
+        }
+    }
+}

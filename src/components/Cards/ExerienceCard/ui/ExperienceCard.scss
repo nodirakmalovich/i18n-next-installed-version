@@ -1,0 +1,79 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.ExperienceCard {
+    cursor: pointer;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+
+
+
+    &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    &_wrapper {
+        padding: 20px;
+
+    }
+
+    &_top {
+        @include flex-style;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+
+        &_image {
+            width: 20%;
+            height: 20px;
+            object-fit: contain
+        }
+
+        &_name {
+            @include size-24;
+            color: $light_green;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid $light_green;
+
+            }
+        }
+
+        &_position {
+            @include size-18;
+            color: $dark_brown;
+            text-transform: capitalize;
+        }
+    }
+
+    &_middle {
+        padding: 10px;
+
+        &_description {
+            @include size-16;
+            color: $gray_color;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            @include size-16;
+            font-weight: 400;
+            color: $black_color;
+        }
+    }
+
+    &_bottom {
+        @include flex-style;
+        background-color: $background_color;
+        padding: 20px;
+        font-size: 13.6px;
+    }
+}
